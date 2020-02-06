@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D001CF7-5E09-4A76-BAA1-5BD7421A9769}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokOto</RootNamespace>
+    <AssemblyName>StokOto</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depo.Designer.cs">
+      <DependentUpon>depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firmaKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmaKayıt.Designer.cs">
+      <DependentUpon>firmaKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grup.Designer.cs">
+      <DependentUpon>grup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hızlıtedarikci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hızlıtedarikci.Designer.cs">
+      <DependentUpon>hızlıtedarikci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUrunSecme.cs" />
+    <Compile Include="raporCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporCikis.Designer.cs">
+      <DependentUpon>raporCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CikisReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CikisReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RaporUrun.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporUrun.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreDegistir.Designer.cs">
+      <DependentUpon>sifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifreYetki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifreYetki.Designer.cs">
+      <DependentUpon>sifreYetki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tedarikciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tedarikciIslemleri.Designer.cs">
+      <DependentUpon>tedarikciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depoEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depoEkle.Designer.cs">
+      <DependentUpon>depoEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grupEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grupEkle.Designer.cs">
+      <DependentUpon>grupEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunCıkıs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunCıkıs.Designer.cs">
+      <DependentUpon>urunCıkıs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunRapor.Designer.cs">
+      <DependentUpon>urunRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunSec.Designer.cs">
+      <DependentUpon>urunSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anamenu.Designer.cs">
+      <DependentUpon>Anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciIslemleri.Designer.cs">
+      <DependentUpon>kullaniciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="urunislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunislemleri.Designer.cs">
+      <DependentUpon>urunislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yardim.Designer.cs">
+      <DependentUpon>Yardim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="depo.resx">
+      <DependentUpon>depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firmaKayıt.resx">
+      <DependentUpon>firmaKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grup.resx">
+      <DependentUpon>grup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hızlıtedarikci.resx">
+      <DependentUpon>hızlıtedarikci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="raporCikis.resx">
+      <DependentUpon>raporCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CikisReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CikisReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RaporUrun.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporUrun.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifreDegistir.resx">
+      <DependentUpon>sifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifreYetki.resx">
+      <DependentUpon>sifreYetki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tedarikciIslemleri.resx">
+      <DependentUpon>tedarikciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depoEkle.resx">
+      <DependentUpon>depoEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grupEkle.resx">
+      <DependentUpon>grupEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunCıkıs.resx">
+      <DependentUpon>urunCıkıs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunRapor.resx">
+      <DependentUpon>urunRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunSec.resx">
+      <DependentUpon>urunSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anamenu.resx">
+      <DependentUpon>Anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciIslemleri.resx">
+      <DependentUpon>kullaniciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="urunislemleri.resx">
+      <DependentUpon>urunislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yardim.resx">
+      <DependentUpon>Yardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SqlServer.ConnectionInfo.dll">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.Smo.dll">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects">
+      <Version>150.18131.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.Types">
+      <Version>14.0.1016.290</Version>
+    </PackageReference>
+    <PackageReference Include="Unofficial.Microsoft.SQLServer.SMO">
+      <Version>11.0.3000</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
