@@ -16,7 +16,7 @@ namespace StokOto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Anamenu());
+            Application.Run(new GirisForm());
         }
 
     }

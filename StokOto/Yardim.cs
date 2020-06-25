@@ -27,7 +27,7 @@ namespace StokOto
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("www.google.com");
+            System.Diagnostics.Process.Start("www.oguzcihan.com/home/contact");
         }
       
       

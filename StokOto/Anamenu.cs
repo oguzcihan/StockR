@@ -42,11 +42,10 @@ namespace StokOto
         {
             GirisForm h = new GirisForm();
             label2.Text = GirisForm.ykullaniciAdi;
-            label3.Text = GirisForm.unvan;
-            this.WindowState = FormWindowState.Minimized;
+            label3.Text = GirisForm.unvan;           
 
-            o = @"D:\C# Proje sql\StokOto2.yedek\StokOto\bin\Debug\" + "Write2.txt";
-            ogz = @"D:\C# Proje sql\StokOto2.yedek\StokOto\bin\Debug\" + "Read2.ogz";
+            o = @"D:\StockR\StokOto\bin\Debug\" + "Write2.txt";
+            ogz = @"D:\StockR\StokOto\bin\Debug\" + "Read2.ogz";
             Yarat();
             ConOku = System.IO.File.ReadAllText(o);
             Oku();
@@ -118,7 +117,7 @@ namespace StokOto
                     return;
 
                 }
-                Environment.Exit(0);
+                Environment.Exit(-1);
 
             }
             catch (Exception hata) { MessageBox.Show(hata.Message.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
@@ -173,7 +172,7 @@ namespace StokOto
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            panel1.Height = panel1.Height - 5;
+            panel1.Height = panel1.Height -5 ;
             if (panel1.Height == 30)
             {
                 timer3.Stop();
@@ -233,6 +232,24 @@ namespace StokOto
         private void hesapMakinesiToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("calc.exe");
+        }
+
+        private void kaydir_Tick(object sender, EventArgs e)
+        {
+            if (label6.Left > -340)
+            {
+                label6.Left -= 1;
+            }
+            else
+            {
+                label6.Left = 1220;
+            }
+        }
+
+        private void kullanıcılarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kullaniciIslemleri oznur = new kullaniciIslemleri();
+            oznur.ShowDialog();
         }
     }
 }

@@ -36,7 +36,7 @@ namespace StokOto
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             ReportDocument rpt = new ReportDocument();
-            rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+            rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
             rpt.SetDataSource(dt);
             crystalReportViewer1.ReportSource = rpt;
             baglanti.Close();
@@ -53,7 +53,7 @@ namespace StokOto
                 adapter.SelectCommand.Parameters.AddWithValue("@ad", textBox1.Text);
                 dt.Clear();
                 adapter.Fill(dt);
-                rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+                rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
                 rpt.SetDataSource(dt);
                 crystalReportViewer1.ReportSource = rpt;
                 baglanti.Close();
@@ -67,7 +67,7 @@ namespace StokOto
                 dt.Clear();
                 adapter.Fill(dt);
 
-                rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+                rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
                 rpt.SetDataSource(dt);
                 crystalReportViewer1.ReportSource = rpt;
                 baglanti.Close();
@@ -81,7 +81,7 @@ namespace StokOto
                 dt.Clear();
                 adapter.Fill(dt);
 
-                rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+                rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
                 rpt.SetDataSource(dt);
                 crystalReportViewer1.ReportSource = rpt;
                 baglanti.Close();
@@ -95,7 +95,7 @@ namespace StokOto
                 dt.Clear();
                 adapter.Fill(dt);
 
-                rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+                rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
                 rpt.SetDataSource(dt);
                 crystalReportViewer1.ReportSource = rpt;
                 baglanti.Close();
@@ -109,7 +109,7 @@ namespace StokOto
                 dt.Clear();
                 adapter.Fill(dt);
 
-                rpt.Load(@"D:\StokOtomasyon\StokOto\Report\RaporUrun.rpt");
+                rpt.Load(@"D:\StockR\StokOto\Report\RaporUrun.rpt");
                 rpt.SetDataSource(dt);
                 crystalReportViewer1.ReportSource = rpt;
                 baglanti.Close();

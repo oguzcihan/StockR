@@ -35,14 +35,6 @@ namespace StokOto
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            DialogResult k;
-            k = MessageBox.Show("Kapatmak istiyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (k == DialogResult.Yes) { Application.Exit(); }
-
-        }
-
 
 
 
@@ -52,26 +44,26 @@ namespace StokOto
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtkullaniciAdi_TextChanged(object sender, EventArgs e)
         {
           
 
-            if (textBox1.Text == "")
+            if (txtkullaniciAdi.Text == "")
             {
-                textBox2.Clear();
+                txtsifre.Clear();
 
-                textBox4.Clear();
+                txtunvan.Clear();
             }
             try
             {
                 baglanti.Open();
                 SqlCommand k = new SqlCommand("select*from kullaniciBilgi where kullaniciAdi=@ad", baglanti);
-                k.Parameters.AddWithValue("@ad", textBox1.Text);
+                k.Parameters.AddWithValue("@ad", txtkullaniciAdi.Text);
                 SqlDataReader oku = k.ExecuteReader();
                 while (oku.Read())
                 {
 
-                    textBox4.Text = oku["unvan"].ToString();
+                    txtunvan.Text = oku["unvan"].ToString();
 
                 }
                 oku.Close();
@@ -99,33 +91,35 @@ namespace StokOto
             //kayıt 
             try
             {
-                if (textBox1.Text == "" && textBox2.Text == "") { MessageBox.Show("Giriş yapmak için tüm boşlukları doldurunuz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+                if (txtkullaniciAdi.Text == "" && txtsifre.Text == "") { MessageBox.Show("Giriş yapmak için tüm boşlukları doldurunuz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
                 else
                 {
 
                     baglanti.Open();
                     SqlCommand komut = new SqlCommand("select* from kullaniciBilgi where kullaniciAdi=@ad", baglanti);
-                    komut.Parameters.AddWithValue("@ad", textBox1.Text);
+                    komut.Parameters.AddWithValue("@ad", txtkullaniciAdi.Text);
                     SqlDataReader oku = komut.ExecuteReader();
                     while (oku.Read())
                     {
-                        if (oku["kullaniciAdi"].ToString() == textBox1.Text && oku["sifre"].ToString() == textBox2.Text && oku["unvan"].ToString() == "YÖNETİCİ")
+                        if (oku["kullaniciAdi"].ToString() == txtkullaniciAdi.Text && oku["sifre"].ToString() == txtsifre.Text && oku["unvan"].ToString() == "YÖNETİCİ")
                         {
 
-                            ykullaniciAdi = textBox1.Text;
-                            unvan = textBox4.Text;
+                            ykullaniciAdi = txtkullaniciAdi.Text;
+                            unvan = txtunvan.Text;
                             this.Hide();
+                            
                             Form frm1 = new Anamenu();
                             frm1.Show();
                             break;
+                            
 
                         }
-                        else if (oku["kullaniciAdi"].ToString() == textBox1.Text && oku["sifre"].ToString() == textBox2.Text && oku["unvan"].ToString() == "PERSONEL")
+                        else if (oku["kullaniciAdi"].ToString() == txtkullaniciAdi.Text && oku["sifre"].ToString() == txtsifre.Text && oku["unvan"].ToString() == "PERSONEL")
                         {
 
 
-                            ykullaniciAdi = textBox1.Text;
-                            unvan = textBox4.Text;
+                            ykullaniciAdi = txtkullaniciAdi.Text;
+                            unvan = txtunvan.Text;
                             this.Hide();
                             Form frm1 = new Anamenu();
                             frm1.Show();
@@ -149,21 +143,13 @@ namespace StokOto
         {
             if (checkBox1.Checked)
             {
-                textBox2.PasswordChar = '\0';
+                txtsifre.PasswordChar = '\0';
             }
             else
             {
-                textBox2.PasswordChar = '*';
+                txtsifre.PasswordChar = '*';
             }
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            textBox2.PasswordChar = '*';
-
-        }
-
-
 
         private void GirisForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -175,18 +161,15 @@ namespace StokOto
                 return;
 
             }
-            Environment.Exit(1);
+            Environment.Exit(-1);
 
         }
 
-        private void GirisForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
-
+            txtsifre.PasswordChar = '*';
         }
 
-        private void GirisForm_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

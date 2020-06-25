@@ -8,6 +8,6 @@ namespace StokOto
 {
     class baglanti
     {
-        public string adres = System.IO.File.ReadAllText(@"D:\StokOtomasyon\StokOto\bin\Debug\Setting.txt");
+        public string adres = System.IO.File.ReadAllText(@"D:\StockR\StokOto\bin\Debug\Setting.txt");
     }
 }

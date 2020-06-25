@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(24, 82);
+            this.label1.Location = new System.Drawing.Point(14, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 0;
@@ -71,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(24, 128);
+            this.label2.Location = new System.Drawing.Point(14, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 1;
@@ -81,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(27, 258);
+            this.label3.Location = new System.Drawing.Point(17, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 17);
             this.label3.TabIndex = 2;
@@ -89,7 +89,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 102);
+            this.textBox1.Location = new System.Drawing.Point(17, 47);
             this.textBox1.MaxLength = 50;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 23);
@@ -97,7 +97,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 147);
+            this.textBox2.Location = new System.Drawing.Point(17, 92);
             this.textBox2.MaxLength = 20;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 23);
@@ -108,7 +108,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(27, 190);
+            this.label5.Location = new System.Drawing.Point(17, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 17);
             this.label5.TabIndex = 8;
@@ -116,7 +116,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(30, 210);
+            this.textBox4.Location = new System.Drawing.Point(20, 155);
             this.textBox4.MaxLength = 20;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -128,7 +128,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(154, 149);
+            this.checkBox1.Location = new System.Drawing.Point(144, 94);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(103, 21);
             this.checkBox1.TabIndex = 10;
@@ -143,7 +143,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(6, 484);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 372);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,7 +171,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 510);
+            this.groupBox1.Size = new System.Drawing.Size(270, 401);
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "KULLANICI İŞLEMLERİ";
@@ -196,7 +196,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(157, 210);
+            this.button2.Location = new System.Drawing.Point(147, 155);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(25, 26);
             this.button2.TabIndex = 91;
@@ -205,7 +205,7 @@
             // 
             // btnduzenle
             // 
-            this.btnduzenle.Location = new System.Drawing.Point(84, 349);
+            this.btnduzenle.Location = new System.Drawing.Point(74, 294);
             this.btnduzenle.Name = "btnduzenle";
             this.btnduzenle.Size = new System.Drawing.Size(86, 33);
             this.btnduzenle.TabIndex = 90;
@@ -215,7 +215,7 @@
             // 
             // btnKaydet
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(6, 349);
+            this.btnKaydet.Location = new System.Drawing.Point(-4, 294);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(74, 33);
             this.btnKaydet.TabIndex = 89;
@@ -225,7 +225,7 @@
             // 
             // btnsil
             // 
-            this.btnsil.Location = new System.Drawing.Point(176, 349);
+            this.btnsil.Location = new System.Drawing.Point(166, 294);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(86, 33);
             this.btnsil.TabIndex = 88;
@@ -241,7 +241,7 @@
             "YÖNETİCİ",
             "PERSONEL",
             "Seçiniz"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 278);
+            this.comboBox1.Location = new System.Drawing.Point(20, 223);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 87;
@@ -254,7 +254,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(421, 441);
+            this.dataGridView1.Size = new System.Drawing.Size(421, 333);
             this.dataGridView1.TabIndex = 89;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -292,7 +292,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(691, 510);
+            this.ClientSize = new System.Drawing.Size(691, 401);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox5);
